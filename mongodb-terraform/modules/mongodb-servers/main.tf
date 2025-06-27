@@ -8,5 +8,6 @@ resource "aws_instance" "mongodb" {
 
   tags = {
     Name = "mongodb-server-${count.index + 1}"
+    Role = "infra-server"
   }
 }

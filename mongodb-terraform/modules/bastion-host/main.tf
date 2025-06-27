@@ -6,6 +6,7 @@ resource "aws_instance" "bastion" {
   key_name               = var.key_name
 
   tags = {
-    Name = "bastion-host"
+     Name = "Bastion-host"
+    Role = "Bastion-server"
   }
 }
